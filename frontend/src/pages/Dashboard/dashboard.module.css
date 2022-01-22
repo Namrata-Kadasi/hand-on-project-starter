@@ -1,0 +1,108 @@
+.Dashboard {
+  font-family: DM Sans;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  border-bottom: 1px solid #F7F8FA;
+}
+
+.logo {
+  width: 120px;
+  height: 29.24px;
+  margin-left: 50px;
+}
+
+.welcomebox {
+  background-color: #F7F8FA80;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: flex start;
+  float: left;
+
+}
+
+.welcometext {
+  margin: 10px 120px;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: left;
+}
+
+.welcomedescription {
+  font-weight: 400;
+  margin: 10px 120px;
+  font-size: 20px;
+  line-height: 160%;
+  color: #566474;
+  text-align: left;
+}
+
+.DashBoardIcon {
+  margin: 7rem 120px 10px;
+  width: 103px;
+  height: 103px;
+}
+
+.cardholder {
+  width: 50%;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  float: right;
+}
+
+.Card {
+  margin-top: 6rem;
+  width: 65%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DFE0E0;
+  border-radius: 10px;
+}
+
+.Card input {
+  margin: 20px 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  border: 1px solid #DFE0E0;
+}
+
+input:focus {
+  outline-color: #719ECE;
+}
+
+.Card button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  margin: 40px 50px;
+  background: #142683;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Card p {
+  margin: 50px 50px 10px 50px;
+  font-size: 18px;
+}

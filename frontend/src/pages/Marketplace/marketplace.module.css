@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .Marketplace {
   font-family: DM Sans;
   font-weight: 500;
@@ -92,13 +97,14 @@ nav button {
   background: #1E272E;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 .divone img {
   height: 140px;
 }
 .container{
-  margin:20px 80px;
+  margin:20px 80px 0 80px;
 }
 .allapi{
 font-family: DM Sans;
@@ -128,6 +134,7 @@ font-size: 20px;
 line-height: 31px;
 letter-spacing: -0.02em;
 margin: 20px 0 10px 0;
+cursor: pointer;
 }
 
 .Apidescription{
@@ -154,4 +161,5 @@ overflow: hidden;
 
 .holder{
   background-color: rgb(247, 248, 250);
+
 }

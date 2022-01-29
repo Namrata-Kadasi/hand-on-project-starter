@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard/dashboard.jsx";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom" ;
 
 
+
 function App() {
   return (
 <Router>

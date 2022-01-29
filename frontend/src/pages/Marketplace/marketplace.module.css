@@ -26,12 +26,11 @@ nav {
 nav button {
   margin-right: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
   border: none;
-  margin: 0 50px;
+  margin: 20px 50px 20px 0;
   background: #142683;
   border-radius: 5px;
   color: white;
@@ -110,11 +109,10 @@ nav button {
 font-family: DM Sans;
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
+font-size: 22px;
 line-height: 31px;
 letter-spacing: -0.02em;
-margin-left: 80px;
-margin-bottom: 28px;
+margin : 15px 0 26px 80px;
 
 color: #000000;
 
@@ -122,7 +120,7 @@ color: #000000;
 .grid{
 display: grid;
 grid-template-columns: repeat(4,1fr);
-grid-gap: 40px;
+grid-gap: 70px;
 
 }
 
@@ -130,10 +128,10 @@ grid-gap: 40px;
   font-family: DM Sans;
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 19px;
 line-height: 31px;
 letter-spacing: -0.02em;
-margin: 20px 0 10px 0;
+margin: 15px 0 5px 0;
 cursor: pointer;
 }
 
@@ -146,6 +144,7 @@ line-height: 21px;
 letter-spacing: -0.02em;
 color: #566474;
 margin-top: 0;
+margin-bottom: 0;
 
 overflow: hidden;
   text-overflow: ellipsis;
@@ -162,4 +161,21 @@ overflow: hidden;
 .holder{
   background-color: rgb(247, 248, 250);
 
+}
+.Navlinks{
+  display:flex;
+  display-direction: column;
+  justify-content: space-between;
+  width:28%;
+}
+
+.navelements{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: -0.02em;
+color: #566474;
+align-self: center;
 }

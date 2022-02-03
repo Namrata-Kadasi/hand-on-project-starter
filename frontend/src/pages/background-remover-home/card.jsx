@@ -2,6 +2,7 @@ import React, {useRef, useState, useEffect} from "react";
 import styles from "./bgremover.module.css";
 import UploadPicImg from "../../utils/uploadimg.svg";
 import {useDropzone} from "react-dropzone";
+const Axios = require('axios');
 
 function UploadPicCard() {
   const fileInputRef = useRef();
@@ -28,7 +29,12 @@ function UploadPicCard() {
       reader.onloadend = () =>{
         setPreview(reader.result);
         console.log(reader.result);
-      };
+        Axios.post("http://localhost:5000/api/upload",{
+        image:reader.result
+        }).then((response)=>{
+        console.log(response.data.image);
+      });
+    }
       reader.readAsDataURL(image);
     }else{
       setPreview(null);

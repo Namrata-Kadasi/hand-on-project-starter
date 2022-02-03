@@ -7,6 +7,7 @@ const Axios = require('axios');
 function UploadPicCard() {
   const fileInputRef = useRef();
   const [image,setImage]=useState(null);
+  const [afterimage,setafterImage]=useState(null);
   const [preview,setPreview]=useState("");
   const {getRootProps, getInputProps} = useDropzone({
     accept:"image/*",
@@ -24,7 +25,9 @@ function UploadPicCard() {
   });
 
   useEffect(()=>{
-    if(image){
+    if(afterimage){
+      setPreview("data:image/png;base64," + afterimage);
+    }else if(image){
       const reader = new FileReader();
       reader.onloadend = () =>{
         setPreview(reader.result);
@@ -33,13 +36,14 @@ function UploadPicCard() {
         image:reader.result
         }).then((response)=>{
         console.log(response.data.image);
+        setafterImage(response.data.image);
       });
     }
       reader.readAsDataURL(image);
     }else{
       setPreview(null);
     }
-  }, [image]);
+  }, [image, afterimage]);
 
   return (
     <div className={styles.holder} >
@@ -53,16 +57,29 @@ function UploadPicCard() {
       <button
       onClick={()=>{
         setImage(null);
+        setafterImage(null);
       }}
       >
       Remove image
       </button>
+      {afterimage && (
+        <a
+                  href={`data:image/png;base64,${afterimage}`}
+                  download={"Image.png"}
+                  className={styles.downloadButton}
+                  style={{ textDecoration: "none" }}
+                >
+                  Download Image
+                </a>
+      )
+      }
       </div>
     ):(
       <div className={styles.Card} {...getRootProps()}>
       <img className={styles.uploadpicimg} src={UploadPicImg} />
       <p className={styles.cardtext}>File should be png, jpg and less than 5mb</p>
-      <button type="submit" name="button" onClick={
+      <button type="submit" name="button"
+      onClick={
         (event)=>{
           event.preventDefault();
           fileInputRef.current.click();

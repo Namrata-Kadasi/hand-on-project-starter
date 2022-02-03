@@ -69,15 +69,16 @@ height: 215px;
 }
 
 .Card {
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 410px;
-height: 430px;
+height: 400px;
   display: flex;
   flex-direction: column;
   border: 1px solid #DFE0E0;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px;
 }
 
 .uploadpicimg{
@@ -95,13 +96,29 @@ color: #566474;
 width: 192px;
 }
 
-.Card button {
+.Card button
+ {
   display: block;
     width: 75%;
     border: none;
   padding: 8px 16px;
   border: none;
   margin-top: 42px;
+  background: #142683;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.downloadButton{
+  display: block;
+text-align:center;
+    width: 68%;
+    border: none;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 20px;
   background: #142683;
   border-radius: 5px;
   color: white;

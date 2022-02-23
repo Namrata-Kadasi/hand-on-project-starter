@@ -1,0 +1,75 @@
+.fullcontainer{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width:100%;
+}
+.modalcontainer{
+  position: fixed;
+background: rgba(86, 100, 116, 0.8);
+height: 100vh;
+width:100%;
+}
+
+.modalcard{
+  background-color: #FFFFFF;
+padding:60px 50px;
+width: 320px;
+height: 340px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+z-index: 1;
+}
+
+.addnewapi{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+letter-spacing: -0.02em;
+margin:0;
+}
+
+.inputtext{
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  border: 1px solid #DFE0E0;
+  width:90%;
+border-radius: 5px;
+margin-top: 25px;
+}
+
+.description{
+  font-family: Arial;
+font-style: normal;
+font-size: 14px;
+line-height: 26px;
+margin:0;
+border-radius: 5px;
+  border: 1px solid #DFE0E0;
+    padding: 8px 16px;
+    color:#566474CC;
+    resize:none;
+    margin:25px 0;
+}
+
+.addbutton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  background: #142683;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  width:100%;
+  margin-left: 1px;
+  border-radius: 5px;
+}

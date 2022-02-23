@@ -52,7 +52,7 @@ function UploadPicCard() {
       <div className={styles.Card} >
       <img
       src={preview}
-      style={{objectFit:"cover", maxWidth:"80%", maxHeight:"70%"}}
+      style={{objectFit:"cover", maxWidth:"80%", maxHeight:"75%"}}
       />
       <button
       onClick={()=>{

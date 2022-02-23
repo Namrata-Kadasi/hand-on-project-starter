@@ -1,11 +1,10 @@
 import React,{useState} from "react";
-import Navbar from "./Navbar.jsx";
-import styles from "./marketplace.module.css";
-import Appbanner from "./app banner.jsx";
-import Apicard from "./apicard.jsx";
+import Navbar from "../Marketplace/Navbar.jsx";
 import Modal from "../../components/modal/modal.jsx";
+import styles from "./myapi.module.css";
+import Apicard from "./crudapi.jsx";
 
-function Marketplace() {
+function MyAPI() {
   const [modalopen,setmodalopen]=useState(false);
   return (
     <div className={styles.holder}>
@@ -13,11 +12,10 @@ function Marketplace() {
       <Modal setOpenModal={setmodalopen}/>
     )}
     <Navbar setOpenModal={setmodalopen}/>
-    <Appbanner />
-    <h2 className={styles.allapi}>All APIs</h2>
-    <Apicard />
+    <h2 className={styles.allapi}>Your Uploaded APIs</h2>
+    <Apicard  ModalOpen={modalopen}/>
     </div>
   );
 }
 
-export default Marketplace;
+export default MyAPI;

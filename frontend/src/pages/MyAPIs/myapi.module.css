@@ -1,0 +1,93 @@
+.holder{
+background-color: rgb(247, 248, 250);
+}
+
+.allapi{
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 31px;
+letter-spacing: -0.02em;
+margin : 45px 0 15px 95px;
+color: #000000;
+}
+
+.gridelement {
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gridelement:hover {
+  transform: translateY(5px);
+  box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.grid img{
+  width:100%;
+  align-self: start;
+}
+
+.grid{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 30px;
+margin: 0 80px;
+}
+
+.Apiname{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 31px;
+letter-spacing: -0.02em;
+margin: 10px 0 3px 0;
+cursor: pointer;
+}
+
+.Apidescription{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: -0.02em;
+color: #566474;
+margin-top: 0;
+margin-bottom: 0;
+
+overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical;
+}
+
+.crudbutton1{
+  height:auto;
+  position: absolute;
+  border: 0.2px solid black;
+  margin: 0.4rem 0 0 11.3rem;
+  background-color: none;
+  cursor: pointer;
+  padding: 0.3em;
+  background-color: #D3B4F6;
+    border-radius: 5%;
+}
+.crudbutton2{
+  height:auto;
+  position: absolute;
+margin: 0.4rem 0 0 9rem;
+  background-color: none;
+  cursor: pointer;
+    padding: 0.3em;
+    background-color: #D3B4F6;
+    border: 0.2px solid black;
+    border-radius: 5%;
+}
+
+.crudbutton1:hover, .crudbutton2:hover{
+  background-color: white;
+}

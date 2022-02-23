@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const authRoute = require("./routes/auth.js");
 const bgRemApi = require("./routes/bgremoverapi.js");
+const apiCrud = require("./routes/apicrud.js");
 
 dotenv.config();
 const app = express();
@@ -20,6 +21,7 @@ mongoose.connect(process.env.MONGODB_URL)
 
 app.use("/", authRoute);
 app.use("/api", bgRemApi);
+app.use("/crud", apiCrud);
 
 app.listen(process.env.PORT, function() {
   console.log("Server has started at port " + process.env.PORT);

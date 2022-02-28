@@ -17,7 +17,7 @@ const [loginStatus,setloginStatus]= useState(false);
 
   return (
     <nav>
-    <img alt="cuvette-logo" className={styles.logo} src={Cuvettelogo} />
+    <img alt="cuvette-logo" className={styles.logo} src={Cuvettelogo} onClick={()=>{navigate("/")}} />
 
     {(!loginStatus)?
 <button type="button" name="button" onClick={ ()=>{navigate('/login')}}>Login / Signup</button>

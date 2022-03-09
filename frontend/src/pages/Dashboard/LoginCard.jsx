@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
   const register =(event) =>{
     event.preventDefault();
-    Axios.post("http://localhost:5000/login",{
+    Axios.post(`${process.env.REACT_BACKEND_URL}/login`,{
       email:emailReg,
       password:passwordReg
     }).then((response)=>{

@@ -32,7 +32,7 @@ function UploadPicCard() {
       reader.onloadend = () =>{
         setPreview(reader.result);
         console.log(reader.result);
-        Axios.post("http://localhost:5000/api/upload",{
+        Axios.post(`${process.env.REACT_BACKEND_URL}/api/upload`,{
         image:reader.result
         }).then((response)=>{
         console.log(response.data.image);

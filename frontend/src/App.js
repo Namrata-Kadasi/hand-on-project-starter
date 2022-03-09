@@ -11,7 +11,7 @@ function App() {
     const [apiList,setApiList] = useState([]);
 
     useEffect(()=>{
-      Axios.get("http://localhost:5000/crud/read").then((response)=>{
+      Axios.get(`${process.env.REACT_BACKEND_URL}/crud/read`).then((response)=>{
           setApiList(response.data);
   });
   });

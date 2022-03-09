@@ -16,7 +16,7 @@ function Modal({prevapiname,prevapiendpoint,prevapidescription,id,setEditList,ed
 
   const changeList = () =>{
     if(editList){
-      Axios.put("http://localhost:5000/crud/update",{
+      Axios.put(`${process.env.REACT_BACKEND_URL}/crud/update`,{
       id:id,
       newapiname:apiname,
       newapiendpoint:apiendpoint,
@@ -29,7 +29,7 @@ function Modal({prevapiname,prevapiendpoint,prevapidescription,id,setEditList,ed
       alert(response.data.description);
     }});
     }else{
-      Axios.post("http://localhost:5000/crud/create",{
+      Axios.post(`${process.env.REACT_BACKEND_URL}/crud/create`,{
       apiname:apiname,
       apiendpoint:apiendpoint,
       apidescription:apidescription

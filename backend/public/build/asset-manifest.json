@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73bb4649.css",
+    "main.js": "/static/js/main.6607a14e.js",
+    "static/js/787.9750ae9a.chunk.js": "/static/js/787.9750ae9a.chunk.js",
+    "static/media/bgremoverimg.svg": "/static/media/bgremoverimg.5d250da2c0138e42f4d550a0696cce89.svg",
+    "static/media/app dp.svg": "/static/media/app dp.e20234e5a5e39bd75728e765c0adfefc.svg",
+    "static/media/DashBoardIcon.png": "/static/media/DashBoardIcon.3c66f2115ec7ac6fb429.png",
+    "static/media/cuvette logo.svg": "/static/media/cuvette logo.02ddfe8c39946b72a987723684f59394.svg",
+    "static/media/APIimg.svg": "/static/media/APIimg.bd1096eb9fc32bf050dd35029a6ab891.svg",
+    "index.html": "/index.html",
+    "static/media/uploadimg.svg": "/static/media/uploadimg.c57da95dc117e2146eeacbda6bb7f9ba.svg",
+    "main.73bb4649.css.map": "/static/css/main.73bb4649.css.map",
+    "main.6607a14e.js.map": "/static/js/main.6607a14e.js.map",
+    "787.9750ae9a.chunk.js.map": "/static/js/787.9750ae9a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73bb4649.css",
+    "static/js/main.6607a14e.js"
+  ]
+}

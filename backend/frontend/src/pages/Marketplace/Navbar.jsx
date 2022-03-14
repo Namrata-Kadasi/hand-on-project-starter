@@ -9,7 +9,7 @@ function Navbar({setOpenModal}) {
 
 const [loginStatus,setloginStatus]= useState(false);
 
-  Axios.get(`${process.env.REACT_BACKEND_URL}/login`).then((response)=>{
+  Axios.get("/login").then((response)=>{
     setloginStatus(response.data);
 });
 

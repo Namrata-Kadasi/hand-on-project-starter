@@ -7,7 +7,7 @@ import Axios from "axios";
 function CrudApi({apiList,setPrevApiName,setPrevApiEndpoint,setPrevApiDescription,setId,setOpenModal,setEditList,ModalOpen}) {
 
 const deleteApi = (id)=>{
-  Axios.delete(`${process.env.REACT_BACKEND_URL}/crud/${id}`)
+  Axios.delete(`/crud/${id}`)
 }
 
 return(

@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
   const register =(event) =>{
     event.preventDefault();
-    Axios.post(`${process.env.REACT_BACKEND_URL}/login`,{
+    Axios.post("/login",{
       email:emailReg,
       password:passwordReg
     }).then((response)=>{

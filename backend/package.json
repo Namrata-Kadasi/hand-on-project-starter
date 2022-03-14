@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "lint": "npx eslint src/"
+    "lint": "npx eslint src/",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm intsall --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +26,6 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "nodemon": "^2.0.12",
-    "prettier": "^2.3.2"
+    "nodemon": "^2.0.12"
   }
 }

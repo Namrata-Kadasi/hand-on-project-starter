@@ -11,6 +11,7 @@ const cors = require("cors");
 
 app.use(cors())
 app.use(express.json({limit: '50mb'}));
+
 mongoose.connect(process.env.MONGODB_URL)
   .then(function() {
     console.log("Connected to Mongo DB database");
@@ -23,6 +24,12 @@ app.use("/", authRoute);
 app.use("/api", bgRemApi);
 app.use("/crud", apiCrud);
 
-app.listen(process.env.PORT, function() {
-  console.log("Server has started at port " + process.env.PORT);
+if(process.env.NODE_ENV == "production"){
+app.use(express.static("frontend/build"));
+}
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, function() {
+  console.log("Server has started at port " + PORT);
 });

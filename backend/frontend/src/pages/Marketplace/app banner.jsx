@@ -13,7 +13,7 @@ function Appbanner() {
 <h2 className={styles.Appnamebanner}>BACKGROUND IMAGE REMOVER</h2>
 <p className={styles.bannerdescription}>100% automatic and free</p>
 </div>
-  <button className={styles.viewappbutton} type="button" name="button" onClick={ ()=>{navigate('/BgRemoverAppHome')}}>View app</button>
+  <button className={styles.viewappbutton} type="button"  name="button" onClick={ ()=>{navigate('/BgRemoverAppHome')}}>View app</button>
 </div>
   );
 }
